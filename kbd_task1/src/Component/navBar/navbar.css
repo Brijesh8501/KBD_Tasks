@@ -1,0 +1,142 @@
+.topnavbrij {
+    overflow: hidden;
+    background-color: #253f4f;
+}
+
+.topnavbrij a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.activebrij {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.topnavbrij .iconbrij {
+    display: none;
+}
+
+.dropdownbrij {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdownbrij .dropbtnbrij {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-contentbrij {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-contentbrij a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnavbrij a:hover, .dropdownbrij:hover .dropbtnbrij {
+    background-color: #F3AE50;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-contentbrij a:hover {
+    background-color: #F3AE50;
+    color: #217eb7;
+}
+
+.dropdownbrij:hover .dropdown-contentbrij {
+    display: block;
+}
+.brij-down-arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px 3px 3px 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    align-content: center;
+}
+.content {
+    min-height: 100%;
+
+
+}
+.content-inside {
+    margin:20px;
+    padding: 20px;
+    padding-bottom: 50px;
+    border-style: solid;
+}
+.footer {
+    height: 50px;
+    background-color: #253f4f;
+    font-weight: bold;
+    text-align: center;
+    color:#eee;
+    padding-top: 25px;
+}
+@media screen and (max-width: 600px) {
+    .topnavbrij a:not(:first-child), .dropdownbrij .dropbtnbrij {
+        display: none;
+    }
+    .topnavbrij a.iconbrij {
+        float: right;
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .topnavbrij.responsivebrij {
+        position: relative;
+    }
+
+    .topnavbrij.responsivebrij .iconbrij {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnavbrij.responsivebrij a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnavbrij.responsivebrij .dropdownbrij {
+        float: none;
+    }
+
+    .topnavbrij.responsivebrij .dropdown-contentbrij {
+        position: relative;
+    }
+
+    .topnavbrij.responsivebrij .dropdownbrij .dropbtnbrij {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
